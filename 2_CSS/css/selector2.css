@@ -1,0 +1,100 @@
+/*
+CSS파일 파일명 .css css폴더 따로 있음
+파일 전체가 <style> 태그 내부라고 생각하면 됨
+*/
+
+h1 {
+    color: black;
+}
+/* html 파일과 연결해야함 */
+/* html에서 설정해서 연결 */
+
+/* 기본 속성 선택자 */
+div[name="name-1"] {
+    background-color: pink;
+}
+
+p[name="name-1"] {
+    background-color: yellowgreen;
+}
+[name="name-2"] {
+    background-color: skyblue;
+}
+
+/* 자식 선택자 */
+
+#parent-ul > li {
+    background-color: orange;
+}
+
+#parent-ul > li > span {
+    background-color:tomato;
+}
+
+/* 후손 선택자 */
+
+#test-div p {
+    background-color: darkseagreen;
+}
+
+/* 반응 선택자 */
+.div-cls {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+
+    margin-bottom: 30px;
+    
+    cursor: pointer; 
+}
+/* margin-bottom 아래쪽 요소와의 간격 */
+/* cursor: pointer; 요소에 마우스 커서가 올라오면 손가락 모양으로 변경 */
+
+#active-test:active {
+    background-color: yellow;
+}
+
+#hover-test:hover {
+    background-color: pink;
+    width: 230px;
+    height: 230px;
+}
+
+/* #hover-test 요소가 변화를 일으키면 0.5초에 걸쳐 변해라 */
+#hover-test {
+    transition-duration: 0.5s;
+}
+
+/* focus 상태는 input 박스에 커서 깜빡일 때 */
+#focus-test:focus {
+    background-color: red;
+}
+/* input 태그 클릭하면 빨간색으로 변함 */
+/* 다른 곳 클릭하면 사라짐 */
+
+input[name="fruits"]:checked {
+    width: 30px;
+    height: 30px;
+
+    background-color: red;
+    /* radio, checkbox 는
+    크기를 제외한 스타일 적용되지 않는다
+    background-color 안 먹힘 */
+}
+
+#test-div2 > input:enabled {
+    background-color: lightgreen;
+}
+
+#test-div2 > input:disabled {
+    background-color: lightcoral;
+}
+
+#div1 + div {
+    background-color: olive;
+}
+/* 뒤에 있는 div만 바뀜 */
+#div3 ~ div {
+    background-color: darkcyan;
+}
