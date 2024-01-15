@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>12_HTML연습문제3</title>
+    </head>
+
+    <body>
+        <form>
+        <h1>회원가입</h1>
+        
+        <fieldset>
+            <legend>필수 입력 사항</legend>
+            <table>
+                <tr> <!-- 1행 -->
+                    <th width="105px">ID</th>
+                    <td>
+                        <input placeholder="아이디 10글자 이내">
+                    </td>
+                    <td>
+                        <button type="button">중복 확인</button>
+                    </td>
+                    <!-- button 자바스크립트랑 연결해서 사용 -->
+                </tr>
+                <tr> <!-- 2행 -->
+                    <th>비밀번호</th>
+                    <td colspan="2">
+                        <input size="30" type="password" placeholder="영문,숫자,특수문자 포함 8자 이상">
+                    </td>
+                </tr>
+                <tr> <!-- 3행 -->
+                    <th>비밀번호 확인</th>
+                    <td colspan="2">
+                        <input size="30" type="password">
+                    </td>
+                </tr>
+                <tr> <!-- 4행 -->
+                    <th>Email</th>
+                    <td>
+                        <input type="email">
+                    </td>
+                    <td>
+                        <select>
+                            <option>직접입력</option>
+                            <option>naver.com</option>
+                            <option>gmail.com</option>
+                            <option>hanmail.net</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <form>
+        <fieldset>
+            <legend>추가 정보</legend>
+            프로필 사진 <input type="file">
+            <br><br>
+            성별 :
+            <label>
+                <input checked type="radio" name="gender"> 남자
+            </label>
+            <label>
+                <input type="radio" name="gender"> 여자
+            </label>
+            <br><br>
+            생년월일 : <input type="date" style="width: 130px;">
+            <br><br>
+            취미
+            <br>
+            <label>
+                <input type="checkbox" name="hobby"> 야구
+                <input type="checkbox" name="hobby"> 농구
+                <input type="checkbox" name="hobby"> 축구
+                <br>
+                <input checked type="checkbox" name="hobby"> 공부
+                <input type="checkbox" name="hobby"> 음악감상
+                <br>
+                <input type="checkbox" name="hobby"> 기타
+                <input size="20">
+            </label>
+            <br><br>
+            자기소개
+            <br>
+            <textarea rows="10" cols="80" style="resize: none;"></textarea>
+        </fieldset>
+        </form>
+        <br>
+        <button type="submit">회원가입</button>
+        <button type="reset">다시입력</button>
+        <button onclick="moveToAnotherPage()">이전으로</button>
+        <script>
+            function moveToAnotherPage() {
+                var nextPageUrl = 'http://127.0.0.1:5500/1_HTML5/11_HTML%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9C2.html';
+                window.location.href = nextPageUrl;
+            }
+        </script>
+        <!-- 자바스크립트로 이전페이지 이동 연결 -->
+        </form>
+    </body>
+</html>
