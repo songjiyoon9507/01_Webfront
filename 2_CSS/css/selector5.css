@@ -1,0 +1,43 @@
+/* :only-child */
+#test1 > p:only-child {
+    background-color: chocolate;
+}
+/* 외동일 때만 됨, 같은 태그
+    아니더라도 전체 자식 1개 아니면 안됨
+*/
+/* 자식 2명이면 선택 안됨 */
+
+/* :only-of-type */
+#test2 > p:only-of-type {
+    background-color: blue;
+}
+/* 다른 태그 있어도 p태그가 유일하면 바꿔줌 */
+
+/* :empty */
+#test3 > p:empty {
+    background-color: darkcyan;
+    height: 30px;
+}
+
+/* 여러 선택자 동시 선택 */
+#test4-1, #test4-2, .test4-3 {
+    background-color: teal;
+    color: yellowgreen;
+}
+
+/* 특정 요소 내부에 있는 특정 클래스만 선택 */
+/* #test5-1의 후손 중 클래스가 c5인 요소를 선택 */
+#test5-1 .c5 {
+    background-color: cornflowerblue;
+}
+
+/* #test5-2의 자식 중 클래스가 c5인 li요소만 선택 */
+#test5-2 > li.c5 {
+    background-color: darkslategrey;
+}
+/* #test5-2 > li > c5로 적으면 9,10이 색칠됨 */
+
+/* 클래스가 여러개인 요소만 선택 */
+.test6.c6 {
+    background-color: lightcoral;
+}

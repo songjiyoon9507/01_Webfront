@@ -8,7 +8,7 @@ h1 {
 }
 /* html 파일과 연결해야함 */
 /* html에서 설정해서 연결 */
-
+/* <link href="폴더명" rel="stylesheet" */
 /* 기본 속성 선택자 */
 div[name="name-1"] {
     background-color: pink;
@@ -26,7 +26,7 @@ p[name="name-1"] {
 #parent-ul > li {
     background-color: orange;
 }
-
+/* parent-ul 아이디 가진 li 안에 내용 다 바뀜 */
 #parent-ul > li > span {
     background-color:tomato;
 }
@@ -51,6 +51,14 @@ p[name="name-1"] {
 /* margin-bottom 아래쪽 요소와의 간격 */
 /* cursor: pointer; 요소에 마우스 커서가 올라오면 손가락 모양으로 변경 */
 
+#test2-div p {
+    background-color: blueviolet;
+}
+/* 후손 선택자라 p는 다 변함 */
+#test3-div > p {
+    background-color: yellowgreen;
+}
+/* 자식 선택자라 직접 자식인 위에 두개 p만 변함 */
 #active-test:active {
     background-color: yellow;
 }

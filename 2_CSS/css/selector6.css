@@ -1,0 +1,47 @@
+/*
+.test {
+    background-color: red;
+    width: 50px
+}
+
+.test {
+    background-color: blue;
+}
+
+이렇게 돼있으면 배경색은 blue 너비 설정은 그대로
+*/
+
+/* 5 순위 : 태그 선택자 */
+div {
+    width: 200px;
+    height: 200px;
+    background-color: red !important;
+}
+/* !important 작성하면 1순위 */
+/* 1순위 선택자는 남용하면 안됨 */
+
+/* 4 순위 : class 선택자 */
+.cls1 {
+    background-color: green;
+}
+/* 높이, 너비 그대로지만 배경색 바뀜 */
+/* 먼저 썼든 나중에 썼든 순위가 높으면 바뀜 */
+
+.cls1 {
+    background-color: yellow;
+}
+/* 동일한 우선 순위에서는 마지막에 작성된 설정값 적용 */
+
+/* 3 순위 : id 선택자 */
+#test1 {
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+/* 너비 빼고 다 바뀜 덮어쓰기 */
+
+/* 2 순위 : inline-style 속성 */
+/* 요소에 직접 작성되는 style 속성 */
+/* html에서 작성 */
+
+/* 1순위 : css속성: 속성값 !important; */
