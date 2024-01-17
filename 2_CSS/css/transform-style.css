@@ -1,0 +1,139 @@
+img {
+    width: 250px;
+}
+
+/* transform : 변형과 관련된 속성 */
+
+/* 
+css 속성 작성 시 크로스 브라우저(브라우저가 달라지는 경우) 처리 방법
+
+-ms- : 마이크로 소프트 (익스플로어, 엣지)
+-webkit- : 크롬, 사파리
+-o- : 오페라
+-moz- : 파이어폭스
+
+설정 안해도 될 때도 있음
+*/
+
+/* 좌우 이동 */
+.trans-x-2d:hover {
+    /* -webkit-transform: translateX(100px);
+    -ms-transform: translateX(100px); */
+    transform: translateX(100px);
+    transition-duration: 0.5s;
+}
+
+/* 상하 이동 */
+.trans-y-2d:hover {
+    transform: translateY(100px);
+    transition-duration: 0.5s;
+}
+
+.trans-xy-2d:hover {
+    transform: translate(100px, -100px);
+    /* 오른쪽 위로 올라감 */
+    transition-duration: 0.5s;
+}
+
+/* scale(배율) */
+/* 가로방향 확대/축소 */
+.trans-x-scale-2d:hover {
+    transform: scaleX(2);
+    /* 2배율 */
+    margin-left: 200px;
+    /* 왼쪽 잘려서 나와서 넣어줌 */
+    transition-duration: 0.5s;
+}
+
+/* 세로방향 확대 축소 */
+.trans-y-scale-2d:hover {
+    transform: scaleY(2);
+    transition-duration: 0.5s;
+}
+
+.trans-scale-2d:hover {
+    transform: scale(2, 2);
+    margin: 150px 150px;
+    transition-duration: 0.5s;
+}
+
+.trans-rotate:hover {
+    transform: rotate(180deg);
+    transition-duration: 0.5s;
+}
+
+/* x, y, z축 이동 */
+.trans-3d:hover {
+    /* perspective (z축 길이) : 원근법 적용 */
+    transform: perspective(300px) translate3d(50px, 50px, 100px);
+    transition-duration: 0.5s;
+}
+
+/* x축 회전 */
+.trans-rotate-x-3d{
+    transform: perspective(300px) rotateX(45deg);
+    /* 그림 위쪽이 뒤로 누움 */
+}
+
+.trans-rotate-y-3d{
+    transform: perspective(300px) rotateY(45deg);
+    /* 오른쪽이 뒤로 밀림 */
+}
+
+.trans-rotate-z-3d:hover{
+    transform: perspective(300px) rotateZ(45deg);
+    transition-duration: 0.5s;
+    /* 오른쪽으로 45도 돌아감 */
+}
+
+/* transition */
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.test1:hover {
+    background-color: yellow;
+    transition-duration: 1s;
+}
+
+.test2:hover {
+    background-color: skyblue;
+    transform: rotate(360deg);
+    /* 테투리 모서리 곡률 속성 */
+    border-radius: 50%;
+}
+
+.test2 {
+    transition-duration: 3s;
+    /* 들어올 때 나갈 때 둘 다 됨 */
+    /* :hover 안에 넣으면 나갈 때 안됨 */
+}
+
+.test3 {
+    transition-duration: 5s;
+
+    transition-timing-function: ease-in-out;
+    /* ease(기본값) */
+    /* ease-in */
+    /* ease-out */
+    /* linear 등속 (같은 속도) */
+}
+
+.test3:hover {
+    background-color: springgreen;
+    transform: rotate(720deg);
+}
+
+.test4:hover {
+    transform: translateY(100px);
+}
+
+.test4 {
+    transition-delay: 2s;
+    transition-duration: 2s;
+    /* 2초 기다렸다가 2초 동안 움직임 */
+}

@@ -1,0 +1,293 @@
+/* 문제1 */
+div {
+    border: 1px solid black;
+}
+
+.container1 {
+    display: flex;
+
+    width: 800px;
+    height: 500px;
+
+    flex-direction: column;
+}
+
+.header1 {
+    flex-basis: 20%;
+    background-color: gray;
+}
+
+.body1 {
+    flex-basis: 60%;
+    display: flex;
+}
+
+.body1-1{
+    flex-basis: 30%;
+    background-color: skyblue;
+}
+.body1-2{
+    flex-basis: 50%;
+    background-color: brown;
+}
+.body1-3{
+    flex-basis: 20%;
+    background-color: beige;
+}
+
+.footer1 {
+    flex-basis: 20%;
+    background-color: gray;
+}
+
+/* 문제2 */
+.container2 {
+    display: flex;
+
+    width: 800px;
+    height: 500px;
+
+    flex-direction: column;
+}
+
+.header2 {
+    flex-basis: 20%;
+    background-color: red;
+}
+
+.body2 {
+    flex-basis: 80%;
+
+    display: flex;
+}
+
+.body2-1 {
+    flex-basis: 30%;
+    background-color: yellow;
+}
+
+.body2-2 {
+    display: flex;
+    flex-basis: 70%;
+
+    flex-direction: column;
+}
+
+.body2-2-1 {
+    flex-basis: 80%;
+    background-color: yellowgreen;
+}
+
+.body2-2-2 {
+    flex-basis: 20%;
+    background-color: blue;
+}
+
+/* 문제3 */
+.container3 {
+    display: flex;
+
+    width: 800px;
+    height: 500px;
+
+    flex-direction: column;
+}
+
+.header3 {
+    flex-basis: 30%;
+    background-color: yellow;
+}
+
+.body3 {
+    flex-basis: 70%;
+    
+    display: flex;
+}
+
+.body3-1 {
+    flex-basis: 30%;
+    background-color: skyblue;
+}
+
+.body3-2 {
+    flex-basis: 70%;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.body3-2-1 {
+    flex-basis: 50%;
+    display: flex;
+}
+
+.body3-2-1-1 {
+    flex-basis: 70%;
+    background-color: aquamarine;
+}
+
+.body3-2-1-2 {
+    flex-basis: 30%;
+    background-color: red;
+}
+
+.body3-2-2 {
+    flex-basis: 50%;
+    background-color: hotpink;
+}
+
+/* 문제4 */
+.container4 {
+    display: flex;
+
+    width: 800px;
+    height: 500px;
+
+    flex-direction: column;
+}
+
+.header4 {
+    flex-basis: 20%;
+    background-color: aquamarine;
+}
+
+.body4 {
+    flex-basis: 60%;
+    display: flex;
+}
+
+.body4-1 {
+    flex-basis: 30%;
+    background-color: aqua;
+}
+
+.body4-2 {
+    flex-basis: 70%;
+    background-color: orange;
+    display: flex;
+
+    /* align-items: end; */
+    flex-wrap: wrap-reverse;
+    /* 위에 두개 다 결과 같음 */
+    justify-content: space-between;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+}
+
+.footer4 {
+    flex-basis: 20%;
+    background-color: aquamarine;
+}
+
+.container5 {
+    display: flex;
+
+    width: 800px;
+    height: 500px;
+
+    flex-direction: column;
+}
+
+.header5 {
+    
+    flex-basis: 30%;
+    display: flex;
+}
+
+.header5-1 {
+    flex-basis: 20%;
+    background-color: yellow;
+}
+
+.header5-2 {
+    flex-basis: 50%;
+    background-color: yellow;
+}
+
+.header5-3 {
+    flex-basis: 30%;
+    background-color: yellow;
+}
+
+.body5 {
+    flex-basis: 80%;
+    display: flex;
+}
+
+.body5-1 {
+    flex-basis: 30%;
+    display: flex;
+
+    flex-direction: column;
+}
+
+.body5-1-1 {
+    flex-basis: calc(100%/3);
+    background-color: skyblue;
+}
+
+.body5-2 {
+    flex-basis: 10%;
+    background-color: pink;
+}
+
+.body5-3 {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.body5-3-1{
+    flex-basis: 50%;
+    background-color: orange;
+}
+
+.body5-3-2 {
+    flex-basis: 50%;
+    display: flex;
+}
+
+.body5-3-2-1 {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.body5-3-2-1-1 {
+    flex-basis: 50%;
+    background-color: green;
+}
+
+.body5-3-2-1-2 {
+    flex-basis: 50%;
+    background-color: green;
+}
+
+.body5-3-2-2 {
+    flex-basis: 50%;
+    background-color: red;
+}
+
+.body5-4 {
+    flex-basis: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.body5-4-1 {
+    flex-basis: 20%;
+    background-color: pink;
+}
+
+.body5-4-2 {
+    flex-basis: 60%;
+    background-color: pink;
+}
+
+.body5-4-3 {
+    flex-basis: 20%;
+    background-color: pink;
+}

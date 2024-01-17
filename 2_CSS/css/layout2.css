@@ -51,6 +51,7 @@ margin과 m1 서로 50px씩 줘도
     /* 위에50 아래50 오른쪽100 왼쪽100 */
    /* padding: 10px 50px 100px; */
     padding: 10px 20px 30px 40px;
+    /* 위에서부터 시계방향으로 생김 */
 }
 /* padding 속성 : 
     작성법에 따라서 padding 특정 방향에
@@ -106,6 +107,7 @@ margin과 m1 서로 50px씩 줘도
     height: 300px;
 
     box-sizing: border-box;
+    /* border까지 합쳐서 가로 세로 전부 300px */
 }
 
 /* * {

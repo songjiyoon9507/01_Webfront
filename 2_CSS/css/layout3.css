@@ -6,7 +6,7 @@ div {
 .container-1 {
     border: 2px dashed red;
     position: relative;
-
+    /* relative 안하면 안에 요소 안 보임 */
 }
 
 .first {
@@ -21,6 +21,7 @@ div {
     background-color: green;
 
     position: absolute;
+    /* 이거 설정 안하면 아래로 내려감 block */
 
     top: 50px;
     left: 50px;
@@ -53,6 +54,7 @@ div {
     position: relative;
 }
 
+/* 가운데 배치 방법 */
 #center {
     width: 50px;
     height: 50px;
@@ -69,6 +71,7 @@ div {
     margin: auto;
 }
 
+/* 어느 화면으로 가도 그 자리에 있음 */
 .fixed-area {
     width: 120px;
 

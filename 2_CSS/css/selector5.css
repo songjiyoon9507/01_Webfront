@@ -38,6 +38,7 @@
 /* #test5-2 > li > c5로 적으면 9,10이 색칠됨 */
 
 /* 클래스가 여러개인 요소만 선택 */
+/* 띄어쓰기 없음 */
 .test6.c6 {
     background-color: lightcoral;
 }

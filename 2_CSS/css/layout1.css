@@ -18,7 +18,6 @@
 .inline-block {
     display: inline-block;
 }
-/* 높이 너비는 안 바뀌고 display속성만 바뀜 */
 
 /* 감싸는 영역 요소 */
 #container-1 {
