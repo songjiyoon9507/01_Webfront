@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box;
+
+    /* border: 1px solid black; */
+    /* 처음 설계할 때 쓰고 지움 */
+}
+
+body {
+    margin: 0;
+}
+/* body 태그 자체에 여백 있어서 딱 안 붙음 */
+/* 딱 붙게 margin 0 설정 */
+
+main {
+    width: 1140px;
+    margin: auto;
+    /* 좌우 간격 맞춰서 가운데 정렬 */
+}
+
+header {
+    height: 200px;
+
+    display: flex;
+}
+
+header > section:nth-of-type(1),
+header > section:nth-of-type(3) {
+    flex-basis: 15%;
+}
+
+header > section:nth-of-type(2) {
+    flex-basis: 70%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 로고 부분 */
+
+header > section:nth-of-type(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 가운데 정렬 */
+}
+
+#home-logo {
+    width: 120px;
+}
+
+/* 검색창 부분 스타일 지정 */
+
+.search-area {
+    width: 500px;
+}
+
+.search-area fieldset {
+    border: 2px solid #455ba8;
+    border-radius: 5px;
+    /* 모서리 곡률 설정 */
+    margin: 0;
+    /* 기본 padding 부분이 있음 */
+    padding: 2px;
+
+    display: flex;
+}
+
+#query {
+    padding: 10px;
+    /* input창 안에 text와 여유 생김 */
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    /* input창 테두리 사라짐 */
+    /* none도 가능하고 0도 가능함 */
+    outline: none;
+    /* ipput 태그에 focus 맞춰졌을 때 생기는 검정창 사라짐 */
+    /* none도 가능하고 0도 가능함 */
+
+    flex-basis: 92%;
+}
+
+#search-btn {
+    flex-basis: 8%;
+    cursor: pointer;
+    /* cursor 올라갔을 때 손가락 모양으로 포인터 변경 */
+    font-size: 20px;
+    /* icon 크기 변경은 width/height로 바꾸는 거 아님
+        font-size 사용 */
+    color: #455ba8;
+    /* 색 바꾸는 것도 font 바꾸는 것처럼 */
+    border: none;
+    background-color: transparent;
+    /* transparent 투명 뒷 배경이랑 색 같아짐 */
+}
+
+/* nav 부분 (목록) */
+
+nav {
+    height: 50px;
+    border-bottom: 2px solid black;
+    /* sticky : 스크롤이 임계점에 도달했을 때 화면에 스티커처럼 붙음
+        - 평소에는 static (기본 position 상태)
+        임계점 도달 시 fixed (화면 특정 위치 고정)
+        top, bottom, left, right 속성이 필수로 작성이 되어야함
+        -> 임계점 도달 시 어느 위치에 부착할 지 정해야하기 때문에
+     */
+    position: sticky;
+    top: 0;
+    /* 최상단에 붙임 */
+    background-color: white;
+}
+
+/* nav > ul 스타일 */
+
+nav > ul {
+    list-style: none;
+    /* 글자 앞에 점 사라짐 */
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+nav li {
+    flex-basis: 150px;
+}
+
+nav a {
+    text-decoration: none;
+    /* a태그 아래 언더라인 없애는 거 */
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    height: 100%;
+    display: block;
+    /* display: block 해줘야 height: 100%가 먹힘 */
+
+    text-align: center;
+    line-height: 50px;
+
+    transition-duration: 0.2s;
+    border-radius: 5px;
+    /* 빠져나갈 때까지 효과 */
+}
+
+nav a:hover {
+    background-color: #455ba8;
+    color: white;
+}
+
+/* content 영역 */
+.content {
+    height: 800px;
+
+    display: flex;
+}
+
+.content-1 {flex-basis: 70%;}
+.content-2 {flex-basis: 30%;}
+
+/* login 스타일 */
+form[name="login-form"] {
+    height: 150px;
+    padding: 10px;
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+form[name="login-form"] > label {
+    margin-top: 5px;
+    font-size: 14px;
+    flex-basis: 20%;
+}
+
+#signup-find-area {
+    flex-basis: 20%;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+
+#signup-find-area > a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#signup-find-area > span {
+    padding: 0 10;
+    /* 상하는 0, 좌우 10px씩 */
+}
+
+#id-pw-area {
+    flex-basis: 60%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ddd;
+}
+
+#id-pw-area > section:first-child {
+    flex-basis: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+#id-pw-area > section:last-child {
+    flex-basis: 25%;
+}
+
+#id-pw-area input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    flex-basis: 50%;
+    border-right: 1px solid #ddd;
+}
+
+#id-pw-area input:first-child {
+    border-bottom: 1px solid #ddd;
+}
+
+#id-pw-area input:focus {
+    border: 2px solid #455ba8;
+}
+
+/* 로그인 버튼 */
+#id-pw-area button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#id-pw-area button:hover {
+    background-color: #455ba8;
+    color: white;
+}
+
+/* footer 영역 */
+footer {
+    height: 200px;
+    background-color: #a3add342;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > p {
+    font-weight: bold;
+}
+
+footer > section > * {
+    font-size: 14px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer span {
+    padding: 0 10;
+}
+/* 반응형 모바일 기준 */
+/* 해상도 767px 이하면 무조건 여기 작성된대로 css 적용해라 */
+/* 스타일 덮어쓰면 됨 */
+@media all and (max-width: 767px) {
+/* main태그 width: 1140px */
+    main {
+        width: 100vw;
+        /* veiw port width */
+    }
+
+    header {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+        border-bottom: none;
+        height: auto;
+    }
+
+    nav > ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav li {
+        flex-basis: auto;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    footer > * {
+        font-size: 12px;
+    }
+}
+
+/* 태블릿 기준 */
+@media all and (min-width: 768px) and (max-width:1023px) {
+    /* 스타일 입력 */
+}

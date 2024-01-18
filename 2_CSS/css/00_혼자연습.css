@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+body {
+    margin: 0;
+}
+
+.background {
+    display: flex;
+    position: relative;
+}
+
+.img {
+    flex-basis: 100%;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
