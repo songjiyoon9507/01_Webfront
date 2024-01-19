@@ -29,6 +29,7 @@ css 속성 작성 시 크로스 브라우저(브라우저가 달라지는 경우
     transition-duration: 0.5s;
 }
 
+/* 대각선 이동 */
 .trans-xy-2d:hover {
     transform: translate(100px, -100px);
     /* 오른쪽 위로 올라감 */

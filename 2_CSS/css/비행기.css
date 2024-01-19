@@ -1,0 +1,63 @@
+.airplane i {
+    transition-duration: 5s;
+}
+
+.airplane i:hover {
+    transform: translate(150px, 400px) scale(4) rotate(720deg);
+}
+
+body div:nth-child(2) {
+    display: flex;
+}
+
+.cow {
+    display: flex;
+    flex-direction: column;
+}
+
+.cow section:first-child {
+    flex-basis: 50%;
+}
+
+.cow section:last-child {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.cow i {
+    font-size: 90px;
+    transition-duration: 10s;
+}
+
+.cow i:hover {
+    transform: translateX(600px);
+}
+
+.third {
+    display: flex;
+}
+
+.dish > img {
+    height: 1000px;
+    width: auto;
+}
+
+.food {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 100px;
+}
+
+.food i {
+    transition-duration: 0.5s;
+}
+
+.food i:first-of-type:hover {
+    transform: translateX(-300px);
+}
+
+.food i:last-of-type:hover {
+    transform: translateX(-500px);
+}

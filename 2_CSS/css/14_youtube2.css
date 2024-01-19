@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+
+    /* border: 1px solid black; */
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 50px;
+    margin-top: 0px;
+    margin-left: 15px;
+    background-color: white;
+    display: flex;
+
+}
+
+.header1 {
+    flex-basis: 20%;
+
+    display: flex;
+}
+
+.header1 >button {
+    border: none;
+    background-color: white;
+}
+
+.header2 {
+    flex-basis: 70%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-area {
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-area > fieldset {
+    flex-basis: 90%;
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    /* padding: 0px; */
+}
+
+.search-area > fieldset > input {
+    flex-basis: 90%;
+    border: none;
+}
+
+.search-area > fieldset > button {
+    flex-basis: 10%;
+    border: none;
+    background-color: white;
+}
+
+.search-area > section {
+    flex-basis: 10%;
+}
+
+.search-area > section > button {
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.header3 {
+    flex-basis: 10%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header3 > button:nth-of-type(1),
+.header3 > button:nth-of-type(2) {
+    margin-right: 15px;
+    margin-top: 15px;
+    border: none;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+}
+
+.header3 > button:nth-of-type(3) {
+    margin-right: 15px;
+    margin-top: 15px;
+    border-radius: 50%;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main > section {
+    display: flex;
+    flex-basis: 90%;
+}
+
+main > .content > .content-left {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80%;
+}
+
+.content-left iframe {
+    width: 100%;
+    height: 650px;
+    border-radius: 15px;
+}
+
+.profile {
+    display: flex;
+}
+
+.profile > section {
+    flex-basis: 100%;
+    display: flex;
+}
+
+.profile-left {
+    justify-content: flex-start;
+}
+
+.profile-left button:first-child {
+    border: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.profile-left button:last-child {
+    height: 40px;
+    width: 60px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.profile-left section {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-left .p1 {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 0px;
+}
+
+.profile-left .p2 {
+    margin-top: 0px;
+}
+
+.profile-right {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.profile-right section {
+    justify-content: flex-end;
+    margin-right: 5px;
+}
+
+.profile-right > section > button {
+    border: none;
+    height: 50px;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.profile-right > button {
+    border: none;
+    border-radius: 50%;
+    margin-right: 5px;
+    height: 50px;
+    width: 50px;
+}
+
+.line1 {
+    margin-top: o;
+    background-color: #ddd;
+    border-radius: 15px;
+}
+
+.line2 {
+    display: flex;
+}
+
+.line2 > h1 {
+    margin-right: 30px;
+}
+
+.line2 > button {
+    border: none;
+    background-color: transparent;
+}
+
+.comment1 {
+    display: flex;
+}
+
+.comment1 button {
+    height: 50px;
+    width:  50px;
+    border: none;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.comment1 input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.comment2-1 {
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-start;
+}
+
+.first {
+    flex-basis: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.first button {
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.first-1 {
+    flex-basis: 90%;
+}
+
+.comment2-2 {
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-start;
+}
+
+.second {
+    flex-basis: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.second button {
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.second-1 {
+    flex-basis: 90%;
+}
+
+main > .content > .content-right {
+    flex-basis: 20%;
+    flex-direction: column;
+}

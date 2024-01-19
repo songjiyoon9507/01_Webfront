@@ -1,0 +1,227 @@
+* {
+    /* border: 1px solid black; */
+}
+
+body {
+    margin: 0;
+    background-color: #52504c;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.background {
+    position: relative;
+}
+
+.background img {
+    width: 100%;
+}
+
+.introduce {
+    height: 50%;
+    width: 50%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    color: #a19e99;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduce h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.introduce h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+.list {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list nav {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+}
+
+.list a {
+    text-decoration: none;
+    color: #a19e99;
+    font-size: 30px;
+    transition-duration: 0.5s;
+}
+
+.list a:hover {
+    color: white;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profile p:first-child {
+    color: #a19e99;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#profile p:nth-child(2),
+#profile p:nth-child(3),
+#profile p:nth-child(4),
+#profile p:last-child {
+    font-size: 30px;
+    color: #a19e99;
+}
+
+#profile button {
+    border: none;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+    background-color: gray;
+}
+
+#profile button:hover {
+    background-color: darkgray;
+}
+
+#practice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#practice > p {
+    font-size: 50px;
+    color: #a19e99;
+    font-weight: bold;
+}
+
+#practice > section {
+    display: flex;
+    justify-content:center ;
+    width: 60%;
+}
+
+.html > ul, .css > ul {
+    list-style: none;
+    padding: 0;
+}
+
+.html a, .css a {
+    text-decoration: none;
+    color: #a19e99;
+}
+
+.html a:hover, .css a:hover {
+    color: white;
+}
+
+.html {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.css {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#practice > h3 {
+    color: white;
+    margin-bottom: 80px;
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: #52504c;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+footer a:hover {
+    color: gray;
+}
+
+@media all and (max-width : 767px) {
+    .introduce > h1 {
+        font-size: 50px;
+        margin-top: 100px;
+    }
+
+    .introduce > h3 {
+        font-size: 20px;
+    }
+
+    .list a {
+        font-size: 15px;
+    }
+
+    #profile >p:nth-child(3),
+    #profile >p:nth-child(4),
+    #profile >p:nth-child(5) {
+        font-size: 20px;
+    }
+}
