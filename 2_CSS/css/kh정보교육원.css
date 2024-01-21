@@ -1,18 +1,32 @@
 * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     margin: 0;
+    position: relative;
 }
 
 header {
+    position: fixed;
+    background-color: white;
+    top: 0;
     display: flex;
     flex-direction: column;
+    width: 100vw;
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 
 .header1 {
     display: flex;
+    height: 30px;
+    background-color: black;
+    
 }
 
 .blank30 {
@@ -22,5 +36,469 @@ header {
 .web70 {
     flex-basis: 80%;
     display: flex;
-    height: 20px;
+    margin-top: 0;
+}
+
+.web70 i {
+    padding-top: 5px;
+    color: white;
+    margin-right: 5px;
+}
+
+.web70 section {
+    margin-top: 0;
+}
+
+.web70 ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.web70 li {
+    display: flex;
+}
+
+.web70 a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin: 0 5px;
+    padding-top: 5px;
+}
+
+.web70 span {
+    color: white;
+    font-size: 12px;
+    margin-right: 5px;
+    padding-top: 5px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: white;
+    margin-top: 30px;
+    padding: 0;
+
+}
+
+.logo-blank {
+    flex-basis: 20%;
+}
+
+.logo-left {
+    flex-basis: 20%;
+}
+
+.logo-center {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-center a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-center div:first-of-type {
+    color: rgb(70, 90, 180);
+}
+
+.logo-center p {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 5px;
+    padding-bottom: 3px;
+}
+
+.logo-center div:last-of-type {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.logo-right {
+    flex-basis: 20%;
+    display: flex;
+    width: 100%;
+}
+
+.logo-left a {
+    display: flex;
+    text-decoration: none;
+}
+.logo-left i {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: rgb(179, 179, 179);
+    color: black;
+    padding: 5px;
+}
+
+.logo-left p {
+    color: black;
+}
+
+.logo-left div {
+    margin-left: 5px;
+}
+
+.logo-left div p:first-child {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.logo-left div p:last-child {
+    font-size: 12px;
+}
+
+.logo-center a {
+    display: flex;
+}
+
+.logo-center div {
+    display: flex;
+}
+
+.logo-center img {
+    height: 40px;
+    width: 40px;
+}
+
+.logo-right a {
+    display: flex;
+    margin-left: 150px;
+    text-decoration: none;
+}
+
+.logo-right i {
+    display: flex;
+    align-items: center;
+    color: rgb(45, 45, 199);
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: rgb(196, 196, 247);
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.logo-right div p:first-of-type {
+    color: rgb(45, 45, 199);
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.logo-right div p:last-of-type {
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.list ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-top: 1px solid rgb(196, 195, 195);
+    border-bottom: 1px solid rgb(196, 195, 195);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.list li {
+    list-style: none;
+    margin: 0 35px;
+    font-size: 15px;
+}
+
+.list li:hover {
+    color: rgb(250, 49, 49);
+    cursor: pointer;
+}
+
+.list span {
+    font-size: 12px;
+    color: rgb(196, 195, 195);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin-top: 180px;
+}
+
+/* .image {
+    background-image: url(/01_Webfront/images/Home.png);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 520px;
+    position: relative;
+} */
+
+.image ul {
+    position: fixed;
+    top: 195px;
+    right: 30px;
+    background-color: white;
+}
+
+.image li {
+    list-style: none;
+}
+
+.image a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.li-1 {
+    background-color: rgb(45, 45, 199);
+}
+
+.image a {
+    padding: 0 5px;
+    padding-bottom: 12px;
+}
+
+.li-1 p {
+    color: white;
+}
+
+.li-1 p:first-of-type,
+.li-1 p:nth-of-type(2) {
+    font-weight: bold;
+    font-size: 20px;  
+}
+
+.li-1 p:last-of-type {
+    font-size: 13px;
+}
+
+.image i {
+    font-size: 30px;
+    color: rgb(41, 41, 41);
+}
+
+.li-2 p, .li-4 p,
+.li-5 p, .li-6 p {
+    color: rgb(41, 41, 41);
+    font-size: 12px;
+    padding: 10px;
+    border-bottom: 1px solid rgb(196, 195, 195);
+}
+
+.li-3 p {
+    color: rgb(41, 41, 41);
+    font-size: 12px;
+}
+
+.li-3 p:last-of-type {
+    padding: 10px;
+    border-bottom: 1px solid rgb(196, 195, 195);
+}
+
+.li-2 a {
+    padding: 12px;
+}
+
+.li-6 a {
+    padding-bottom: 0;
+}
+
+.line {
+    border-bottom: 1px solid rgba(49, 49, 49,0.5);
+}
+
+.line ul {
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px;
+}
+
+.line li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.line li:first-of-type,
+.line li:nth-of-type(2),
+.line li:nth-of-type(3),
+.line li:nth-of-type(4) {
+    padding: 0 50px;
+    border-right: 1px solid rgb(196, 195, 195);
+}
+
+.line a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.line i {
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: rgb(49, 49, 49);
+}
+
+.line > ul > li > a > p {
+    font-size: 13px;
+    color: rgb(49, 49, 49);
+}
+
+.line-last {
+    display: flex;
+    align-items: center;
+}
+
+.line-last a {
+    padding-left: 40px;
+}
+
+.line-last i {
+    border-radius: 50%;
+    background-color: rgb(196, 195, 195);
+    padding: 10px;
+}
+
+.line-last span {
+    padding-left: 10px;
+}
+
+.line-last p:first-of-type {
+    font-size: 30px;
+    color: tomato;
+    font-weight: bold;
+}
+
+.line-last p:last-of-type {
+    font-size: 12px;
+    color: rgb(49, 49, 49);
+}
+
+.curriculum {
+    display: flex;
+    flex-direction: column;
+}
+
+.curriculum-1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.curriculum-1 .cur-blank:first-of-type {
+    flex-basis: 30%;
+}
+
+.curriculum-1 section:nth-child(2) {
+    flex-basis: 30%;
+}
+
+.curriculum-1 section:nth-child(3) {
+    flex-basis: 20%;
+}
+
+.curriculum-1 div {
+    text-align: center;
+}
+
+.curriculum-1 .cur-blank:last-of-type {
+    flex-basis: 20%;
+}
+
+
+.curriculum-1 section div:first-child {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.curriculum-1 section div:last-child {
+    color: rgb(49, 49, 49);
+}
+
+
+.curriculum-1 section:nth-child(3) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100px;
+}
+
+.curriculum-1 a {
+    text-decoration:  none;
+    color: rgb(45, 45, 199);
+    font-size: 13px;
+    border: 1px solid rgb(45, 45, 199);
+    padding: 20px;
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
+    transition-duration: 0.5s;
+}
+
+.curriculum-1 a:hover {
+    color: white;  
+    background-color: rgb(45, 45, 199);
+}
+
+.cur-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.curriculum-2 {
+    display: flex;
+    margin-top: 30px;
+    height: 500px;
+}
+
+.curriculum-2 a {
+    text-decoration: none;
+}
+
+.cur2-blank {
+    flex-basis: 20%;
+}
+
+.cur2-1, .cur2-2, .cur2-3, .cur2-4 {
+    flex-basis: 15%;
+}
+
+.cur2-1 {
+    background-image: url(/01_Webfront/images/cur2--1.PNG);
+    height: 500px;
+}
+
+.cur2-2, .cur2-3, .cur2-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cur2-2 div, .cur2-3 div, .cur2-4 div {
+    border: 1px solid rgb(49, 49, 49);
+    height: 100%;
+}
+
+.cur2-1, .cur2-2, .cur2-3 {
+    margin-right: 15px;
+}
+
+.cur2-2 div:first-child,
+.cur2-3 div:first-child,
+.cur2-4 div:first-child {
+    margin-bottom: 15px;
 }
