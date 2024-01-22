@@ -94,10 +94,11 @@ let foo = 123;
 }
 
 console.log(foo);
-//console.log(bar);
-//Uncaught ReferenceError: bar is not defined
-//지역 변수라서 전역에서 사용 불가능 정의된 적이 없다
-//에러 나면 아래 값이 안 뜸
+// 123 출력
+// console.log(bar);
+// Uncaught ReferenceError: bar is not defined
+// 지역 변수라서 전역에서 사용 불가능 정의된 적이 없다
+// 에러 나면 아래 값이 안 뜸
 
 // 함수 레벨 (var)
 var test = 123; // 전역 변수
