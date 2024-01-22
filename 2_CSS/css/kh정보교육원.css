@@ -234,13 +234,6 @@ header {
     margin-top: 180px;
 }
 
-/* .image {
-    background-image: url(/01_Webfront/images/Home.png);
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 520px;
-    position: relative;
-} */
 
 .image ul {
     position: fixed;
@@ -478,8 +471,82 @@ header {
 }
 
 .cur2-1 {
-    background-image: url(/01_Webfront/images/cur2--1.PNG);
     height: 500px;
+    background-color: rgb(65, 65, 199);
+}
+
+.cur2-1 a {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.cur2-1 p:first-of-type,
+.cur2-2-1 p:first-of-type,
+.cur2-4-2 p:first-of-type {
+    color: rgb(0, 198, 233);
+    font-weight: bold;
+}
+
+.curriculum-2 p:first-of-type {
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.curriculum-2 p:nth-of-type(2) {
+    font-size: 25px;
+    letter-spacing: -2px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.cur2-1 span:first-of-type,
+.cur2-1 span:nth-of-type(2),
+.cur2-1 span:last-of-type {
+    border: 1px solid white;
+    border-radius: 50px;
+    margin: 5px 0;
+    margin-left: 30px;
+    padding: 10px;
+    padding-left: 20px;
+    letter-spacing: -2px;
+}
+
+.cur2-1 span:first-of-type {
+    width: 65px;
+}
+
+.cur2-1 span:nth-of-type(2),
+.cur2-1 span:last-of-type {
+    width: 110px;
+}
+
+.cur2-1 p:nth-of-type(3),
+.cur2-2-1 p:nth-of-type(3),
+.cur2-2-2 p:nth-of-type(3),
+.cur2-3-1 p:nth-of-type(3),
+.cur2-3-2 p:nth-of-type(3),
+.cur2-4-1 p:nth-of-type(3), 
+.cur2-4-2 p:nth-of-type(3) {
+    font-size: 15px;
+    margin: 15px 0;
+    letter-spacing: -2px;
+    margin-left: 30px;
+}
+
+.cur2-2-1, .cur2-4-2 {
+    background-color: rgb(65, 65, 199);
+}
+
+.cur2-2-1 p:nth-of-type(2),
+.cur2-4-2 p:nth-of-type(2) {
+    font-size: 25px;
+    color: white;
+}
+
+.cur2-2-1 p:last-of-type,
+.cur2-4-2 p:last-of-type {
+    color: white;
 }
 
 .cur2-2, .cur2-3, .cur2-4 {
@@ -501,4 +568,42 @@ header {
 .cur2-3 div:first-child,
 .cur2-4 div:first-child {
     margin-bottom: 15px;
+}
+
+.cur2-2-2 p:first-of-type,
+.cur2-3-1 p:first-of-type,
+.cur2-3-2 p:first-of-type,
+.cur2-4-1 p:first-of-type {
+    color: rgb(45, 45, 199);
+    font-weight: bold;
+}
+
+.cur2-2-2 p:nth-of-type(2),
+.cur2-3-1 p:nth-of-type(2),
+.cur2-3-2 p:nth-of-type(2),
+.cur2-4-1 p:nth-of-type(2) {
+    color: black;
+}
+
+.cur2-2-2 p:nth-of-type(3),
+.cur2-3-1 p:nth-of-type(3),
+.cur2-3-2 p:nth-of-type(3),
+.cur2-4-1 p:nth-of-type(3) {
+    color: black;
+}
+.cur2-2-2 p:last-of-type,
+.cur2-3-1 p:last-of-type,
+.cur2-3-2 p:last-of-type,
+.cur2-4-1 p:last-of-type {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.curriculum-2 i {
+    color: rgb(45, 45, 199);
+    font-size: 30px;
+    padding: 10px;
+    border: 1px solid rgba(45, 45, 199, 0.2);
+    border-radius: 50%;
+    margin: 10px;
 }
