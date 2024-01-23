@@ -186,7 +186,7 @@ console.log(user.userName);
 
 const sumFn = function(a,b) { return a + b; };
 // sumFn 변수명이면서 함수명
-// 익명함수 function(a,b) { return a + b; }
+// 익명함수 function(a,b) { return a + b; } 단일로 쓰지않음
 // 함수 호출하려면 이름이 있어야함 변수명에 익명 함수 대입
 /* function sumFn(a, b) {
     return a + b;
