@@ -92,14 +92,22 @@ function check5() {
 
 // up/down game
 function startGame() {
-    const rN = Math.floor(Math.random() * 99 + 1);
+    const rN = Math.floor(Math.random() * 100 + 1);
     let input;
-    
-    
+    let count = 0;
     while (input !== null) {
-        input = prompt("1~100사이의 수를 입력해주세요");
-        if(input > rN) {
-            
+        // input이 null이 아닐 경우 true 계속됨
+        input = prompt("1~100 사이의 수를 입력해주세요");
+        if(rN > input) {
+            count++;
+            alert(`up 도전횟수 : ${count}회`);
+        } else if (rN < input) {
+            count++;
+            alert(`down 도전횟수 : ${count}회`);
+        } else {
+            count++;
+            alert(`정답입니다. 도전횟수 : ${count}회`);
+            break;
         }
     }
 }
