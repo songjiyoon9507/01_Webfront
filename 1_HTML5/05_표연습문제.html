@@ -3,16 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>05_표연습문제</title>
+        <title>05_표 연습문제</title>
         <style>
 
-            .tb1 {
+            /* .tb1 {
                 border: 2px solid black;
-            }
+            } */
             /* border 전체 바깥 줄 만들기 2px 검정 테두리 */
-            .tb1 th, .tb1 td {
+            /* .tb1 th, .tb1 td {
                 border: 1px solid black;
-            }
+            } */
             /* 테이블의 th, td 부분 1px 검정 테두리 */
             /* 아래 <table class="tb1" border="1" */
             /* 이렇게 돼있었으면
@@ -25,7 +25,7 @@
                 }
                 <table border="1">
                 위에 두 명령어가 같은 말 */
-            .tb1 thead {
+            /* .tb1 thead {
                 background-color: aqua;
             }
 
@@ -43,13 +43,33 @@
 
             .tb1 tfoot td {
                 background-color: yellow;
+            } */
+
+            table {
+                border: 2px solid black;
+            }
+
+            thead {
+                background-color: aqua;
+            }
+
+            tbody th, tfoot th {
+                background-color: red;
+            }
+
+            tbody td {
+                background-color: orange;
+            }
+            
+            tfoot td {
+                background-color: yellow;
             }
 
         </style>
     </head>
 
     <body>
-        <table class="tb1">
+        <table class="tb1" border="1">
             <thead>
                 <tr> <!-- 1행 -->
                     <th colspan="5" height="30">하수정 컬렉션</th>
