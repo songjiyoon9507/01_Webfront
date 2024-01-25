@@ -98,14 +98,15 @@ function startGame() {
     while (input !== null) {
         // input이 null이 아닐 경우 true 계속됨
         input = prompt("1~100 사이의 수를 입력해주세요");
-        if(rN > input) {
-            count++;
+        count++;
+        if(rN > input) { // if문에 조건문 만족하면 빠져나감
+            
             alert(`up 도전횟수 : ${count}회`);
         } else if (rN < input) {
-            count++;
+            
             alert(`down 도전횟수 : ${count}회`);
         } else {
-            count++;
+            
             alert(`정답입니다. 도전횟수 : ${count}회`);
             break;
         }

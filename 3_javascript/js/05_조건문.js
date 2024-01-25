@@ -107,32 +107,32 @@ function calc(op) {
     // break : switch문을 멈춤
     // -> case에 break;를 작성하지 않으면
     // 멈추지 않고 다음 case로 넘어감
-    switch(op) { // op 값에 따른 처리 case 작성
-        case '+': result = v1 + v2; break;
-        case '-': result = v1 - v2; break;
-        case '*': result = v1 * v2; break;
-        case '/': result = v1 / v2; break;
-        case '%': result = v1 % v2; break;
+    // switch(op) { // op 값에 따른 처리 case 작성
+    //     case '+': result = v1 + v2; break;
+    //     case '-': result = v1 - v2; break;
+    //     case '*': result = v1 * v2; break;
+    //     case '/': result = v1 / v2; break;
+    //     case '%': result = v1 % v2; break;
 
-        // 맞는 case가 없을 경우에 적용할 기본값 (else)
-        default : result = "잘못된 연산자"; break;
-    }
+    //     // 맞는 case가 없을 경우에 적용할 기본값 (else)
+    //     default : result = "잘못된 연산자"; break;
+    // }
 
     calcResult.innerText = result;
 
     // if 문 버전
 
-    // if(op == '+') {
-    //     calcResult.innerText = v1 + v2;
-    // } else if(op == '-') {
-    //     calcResult.innerText = v1 - v2;
-    // } else if(op == '*') {
-    //     calcResult.innerText = v1 * v2;
-    // } else if(op == '/') {
-    //     calcResult.innerText = v1 / v2;
-    // } else if(op == '%') {
-    //     calcResult.innerText = v1 % v2;
-    // } else {
-    //     calcResult.innerText = "잘못된 연산자";
-    // }
+    if(op == '+') {
+        calcResult.innerText = v1 + v2;
+    } else if(op == '-') {
+        calcResult.innerText = v1 - v2;
+    } else if(op == '*') {
+        calcResult.innerText = v1 * v2;
+    } else if(op == '/') {
+        calcResult.innerText = v1 / v2;
+    } else if(op == '%') {
+        calcResult.innerText = v1 % v2;
+    } else {
+        calcResult.innerText = "잘못된 연산자";
+    }
 }
