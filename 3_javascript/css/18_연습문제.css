@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     display: flex;
     justify-content: center;
@@ -12,28 +13,33 @@ body {
 main {
     flex-basis: 50%;
     display: flex;
+    justify-content: center;
 }
 
-form {
-    flex-basis: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container {
+    width: 50%;
 }
+
 input {
     margin-top: 15px;
     height: 10%;
-    width: 80%;
+    width: 100%;
     border: none;
     border-bottom: 1px solid gray;
 }
+
 input:focus {
     outline: none;
 }
 
+.containerBtn {
+    display: flex;
+    flex-direction: column;
+}
+
 #keypad {
-    height: 80%;
-    width: 80%;
+    height: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,6 +53,7 @@ input:focus {
     justify-content: center; 
     align-items: center;
 }
+
 #keypad button {
     flex-basis: 100%;
     height: 100%;
@@ -55,41 +62,53 @@ input:focus {
     background-color: white;
     border: none;
 }
+
 #keypad button:hover {
     border: 1px solid green;
     border-radius: 10px;
 }
-form > div:last-child {
-    height: 10%;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
+
+#addBtn {
+    margin: 5px 0;
 }
 
-form > div:last-child > button {
-    margin: 3px 0;
-    padding: 3px 0;
+#addBtn, #removeBtn {
     background-color: white;
-    color: gray;
     border: 1px solid gray;
+    color: gray;
     border-radius: 5px;
-    font-weight: bold;
+    padding: 3px 0;
 }
 
-form > div:last-child > button:hover {
-    border: 1px solid green;
-    color: green;
-    background-color: white;
+#addBtn:hover, #removeBtn:hover {
+    color: white;
+    background-color: green;
 }
-/* form > div:last-child > button {
-    width: 100%;
-} */
 
-section {
-    flex-basis: 50%;
+span {
+    cursor: pointer;
+}
+
+.border {
+    display: flex;
+}
+
+main > section {
+    width: 50%;
+    margin-top: 15px;
+    height: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-left: 10px;
     border-left: 1px solid gray;
+}
+
+.border {
+    margin-top: 3px;
+}
+
+.border span {
+    font-size: 15px;
+    font-weight: bold;
 }

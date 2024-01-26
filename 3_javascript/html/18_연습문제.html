@@ -9,8 +9,9 @@
 </head>
 <body>
     <main>
-        <form> <!--전화번호-->
-            <input type="number" class="display"> <!--누른 키패드대로 뜨는 번호-->
+        <div class="container"> <!--전화번호-->
+            <!-- form 태그로 만들면 숫자 사라짐 -->
+            <input class="display"> <!--누른 키패드대로 뜨는 번호-->
             <div id="keypad">
                 <div>
                     <button class="numbers" onclick="btn('1')">1</button>
@@ -33,17 +34,26 @@
                     <button class="numbers" onclick="btn('*')">*</button>
                 </div>
             </div>
-            <div>
-                <button>추가</button>
-                <button type="reset">초기화</button>
+            <div class="containerBtn">
+                <button id="addBtn">추가</button>
+                <button id="removeBtn">초기화</button>
             </div>
-        </form>
-        <section> <!--전화번호 목록-->
-            <div>전화 번호 목록</div>
-            <div></div>
+        </div>
+        <section>
+            <section>
+                <div>전화 번호 목록</div>
+            </section>
+            <section id="con2">
+            <!--<div class="border">
+                    <div class="list"></div>
+                    <i>☆</i>
+                    <span>&times;</span>
+                </div>-->
+            </section>
         </section>
     </main>
 
     <script src="../js/18_연습문제.js"></script>
+    <script src="https://kit.fontawesome.com/3dd1cd3301.js" crossorigin="anonymous"></script>
 </body>
 </html>
