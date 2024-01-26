@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18_연습문제</title>
+
+    <link rel="stylesheet" href="../css/18_연습문제.css">
+</head>
+<body>
+    <main>
+        <form> <!--전화번호-->
+            <input type="number" class="display"> <!--누른 키패드대로 뜨는 번호-->
+            <div id="keypad">
+                <div>
+                    <button class="numbers" onclick="btn('1')">1</button>
+                    <button class="numbers" onclick="btn('2')">2</button>
+                    <button class="numbers" onclick="btn('3')">3</button>
+                </div> 
+                <div> 
+                    <button class="numbers" onclick="btn('4')">4</button>
+                    <button class="numbers" onclick="btn('5')">5</button>
+                    <button class="numbers" onclick="btn('6')">6</button>
+                </div> 
+                <div> 
+                    <button class="numbers" onclick="btn('7')">7</button>
+                    <button class="numbers" onclick="btn('8')">8</button>
+                    <button class="numbers" onclick="btn('9')">9</button>
+                </div> 
+                <div> 
+                    <button class="numbers" onclick="btn('#')">#</button>
+                    <button class="numbers" onclick="btn('0')">0</button>
+                    <button class="numbers" onclick="btn('*')">*</button>
+                </div>
+            </div>
+            <div>
+                <button>추가</button>
+                <button type="reset">초기화</button>
+            </div>
+        </form>
+        <section> <!--전화번호 목록-->
+            <div>전화 번호 목록</div>
+            <div></div>
+        </section>
+    </main>
+
+    <script src="../js/18_연습문제.js"></script>
+</body>
+</html>
