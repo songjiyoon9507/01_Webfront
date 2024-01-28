@@ -34,7 +34,7 @@ div{
     /* main축의 방향과 시작위치를 지정하는 속성 */
 
     /* main 축 행 방향 (가로(row) 기본값) */
-    /* flex-direction: row; */
+    flex-direction: row;
 
     /* 행 방향(가로) + 순서 반대 */
     /* flex-direction: row-reverse; */
@@ -76,7 +76,7 @@ div{
     /* main축 방향으로 가운데 정렬 */
     /* justify-content: center; */
 
-     /* item 주위에 메인축 방향 양쪽으로 일정한 크기의 공간을 추가
+    /* item 주위에 메인축 방향 양쪽으로 일정한 크기의 공간을 추가
     -> 양끝은 조금, item 중간은 넓게 떨어져있음 
     -> 브라우저 크기에 따라 변함
     */
@@ -96,7 +96,7 @@ div{
     
     /* align-items: flex-start; */
     /* align-items: flex-end; */
-    /* align-items: center; */
+    align-items: center;
 }
 
 /* 요소 정가운데 배치하기 */
@@ -104,7 +104,6 @@ div{
     display: flex;
     width: 450px;
     height: 450px;
-
     justify-content: center;
     align-items: center;
 }

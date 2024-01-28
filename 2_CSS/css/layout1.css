@@ -4,9 +4,7 @@
 .area4 {background-color: green;}
 .area5 {background-color: blue;}
 
-.inline {
-    display: inline;
-}
+.inline {display: inline;}
 
 .block {
     display: block;
@@ -30,20 +28,17 @@
 .div-1 {
     height: 50%;
     width: 100%;
-
     border: 1px dashed hotpink;
 }
 
 /*
 .div--2 {
     height: 30%;
-
     background-color: red;
 }
 
 .div--3 {
     height: 70%;
-
     background-color: blue;
 }
 */
@@ -112,8 +107,8 @@ width가 지정되지 않으면 항상 100%
 #test4 {
     background-color: deeppink;
 
-    /* visibility: hidden; */
-    display: none;
+    visibility: hidden;
+    /* display: none; */
 }
 /* visibility: hidden;
 차지하고 있던 공간 그대로 남아있음

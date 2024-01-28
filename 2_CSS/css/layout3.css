@@ -19,10 +19,8 @@ div {
     width: 200px;
     height: 200px;
     background-color: green;
-
     position: absolute;
     /* 이거 설정 안하면 아래로 내려감 block */
-
     top: 50px;
     left: 50px;
 }
@@ -31,9 +29,7 @@ div {
     width: 100px;
     height: 100px;
     background-color: red;
-
     position: absolute;
-
     top: 100px;
     left: 100px;
 }
@@ -41,12 +37,10 @@ div {
 /* 정가운데 배치하기 */
 /* 공식 같은 거 */
 /* position: absolute;
-
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-
     margin: auto; */
 .container-2 {
     width: 400px;
@@ -59,7 +53,6 @@ div {
     width: 50px;
     height: 50px;
     background-color: pink;
-
     position: absolute;
     /* left: 125px;
     top: 125px; */
@@ -67,16 +60,13 @@ div {
     left: 0;
     bottom: 0;
     right: 0;
-
     margin: auto;
 }
 
 /* 어느 화면으로 가도 그 자리에 있음 */
 .fixed-area {
     width: 120px;
-
     position: fixed;
-
     bottom: 50px;
     right: 50px;
 }

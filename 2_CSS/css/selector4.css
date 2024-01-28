@@ -21,9 +21,9 @@
     형제 관계 요소 중 지정된 수열번째 요소를 모두 선택
     - 순서 따질 때 1부터 시작
  */
- #test1 > p:nth-child(2) {
+#test1 > p:nth-child(2) {
     background-color: yellow;
- }
+}
  /* 해석 순서는 test1의 자식 중 2번째 요소 선택하고,
     p태그인지 검사 */
     

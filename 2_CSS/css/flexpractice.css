@@ -12,7 +12,7 @@ div {
     flex-direction: column;
 }
 
-.header1 {
+.header1, .footer1 {
     flex-basis: 20%;
     background-color: gray;
 }
@@ -35,18 +35,11 @@ div {
     background-color: beige;
 }
 
-.footer1 {
-    flex-basis: 20%;
-    background-color: gray;
-}
-
 /* 문제2 */
 .container2 {
     display: flex;
-
     width: 800px;
     height: 500px;
-
     flex-direction: column;
 }
 
@@ -57,7 +50,6 @@ div {
 
 .body2 {
     flex-basis: 80%;
-
     display: flex;
 }
 
@@ -69,7 +61,6 @@ div {
 .body2-2 {
     display: flex;
     flex-basis: 70%;
-
     flex-direction: column;
 }
 
@@ -86,10 +77,8 @@ div {
 /* 문제3 */
 .container3 {
     display: flex;
-
     width: 800px;
     height: 500px;
-
     flex-direction: column;
 }
 
@@ -100,7 +89,6 @@ div {
 
 .body3 {
     flex-basis: 70%;
-    
     display: flex;
 }
 
@@ -111,7 +99,6 @@ div {
 
 .body3-2 {
     flex-basis: 70%;
-    
     display: flex;
     flex-direction: column;
 }
@@ -139,14 +126,12 @@ div {
 /* 문제4 */
 .container4 {
     display: flex;
-
     width: 800px;
     height: 500px;
-
     flex-direction: column;
 }
 
-.header4 {
+.header4, .footer4 {
     flex-basis: 20%;
     background-color: aquamarine;
 }
@@ -165,7 +150,6 @@ div {
     flex-basis: 70%;
     background-color: orange;
     display: flex;
-
     /* align-items: end; */
     flex-wrap: wrap-reverse;
     /* 위에 두개 다 결과 같음 */
@@ -177,11 +161,7 @@ div {
     width: 150px;
 }
 
-.footer4 {
-    flex-basis: 20%;
-    background-color: aquamarine;
-}
-
+/* 문제5 */
 .container5 {
     display: flex;
 
@@ -261,11 +241,6 @@ div {
     background-color: green;
 }
 
-.body5-3-2-1-2 {
-    flex-basis: 50%;
-    background-color: green;
-}
-
 .body5-3-2-2 {
     flex-basis: 50%;
     background-color: red;
@@ -284,10 +259,5 @@ div {
 
 .body5-4-2 {
     flex-basis: 60%;
-    background-color: pink;
-}
-
-.body5-4-3 {
-    flex-basis: 20%;
     background-color: pink;
 }

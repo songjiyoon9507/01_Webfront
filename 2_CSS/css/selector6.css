@@ -1,15 +1,14 @@
-/*
-.test {
+/* .test {
     background-color: red;
     width: 50px
 }
 
 .test {
     background-color: blue;
-}
+} */
 
-이렇게 돼있으면 배경색은 blue 너비 설정은 그대로
-*/
+/* 이렇게 돼있으면 배경색은 blue 너비 설정은 그대로 */
+
 
 /* 5 순위 : 태그 선택자 */
 div {
