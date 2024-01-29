@@ -30,15 +30,23 @@ addBtn.addEventListener("click", () => {
     box.classList.add("list");
     box.innerHTML = (display.value); // value 넣어줘야 됨!!!
     const star = document.createElement("span")
-    star.innerHTML = "☆";
+    star.classList.add("star"); // star class
+    star.innerHTML = "★";
     const cancel = document.createElement("span")
     cancel.innerHTML = "&times;";
     div.append(box, star, cancel);
     con2.append(div);
     display.value = '';
 
+    
     star.addEventListener("click", () => {
-        star.style.color = "green";
+    //     const starColor = star.style.color;
+    star.style.color = "yellow";
+    //     if (starColor == "yellow") {
+    //         btn.style.color = "black";
+    //     } else {
+    //         btn.style.color = "yellow";
+    //     }
     })
 
 
