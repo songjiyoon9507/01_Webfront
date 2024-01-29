@@ -54,7 +54,7 @@ nav > a:first-child {
 }
 
 .banner {
-    background-image: url(/images/netflixbanner2.jpeg);
+    background-image: url(/01_Webfront/images/netflixbanner2.jpeg);
     width: 100vw;
     height: 600px;
     background-repeat: no-repeat;

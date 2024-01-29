@@ -75,7 +75,7 @@ header > section:nth-of-type(1) {
     /* input창 테두리 사라짐 */
     /* none도 가능하고 0도 가능함 */
     outline: none;
-    /* ipput 태그에 focus 맞춰졌을 때 생기는 검정창 사라짐 */
+    /* input 태그에 focus 맞춰졌을 때 생기는 검정창 사라짐 */
     /* none도 가능하고 0도 가능함 */
 
     flex-basis: 92%;
