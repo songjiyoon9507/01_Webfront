@@ -31,8 +31,8 @@ applyBtn.addEventListener("click", function() {
     result.style.fontWeight = fontWeight;
     result.style.color = fontColor;
     result.style.backgroundColor = bgc;
-    result.style.justifyContent = col;
-    result.style.alignItems = row;
+    result.style.justifyContent = row;
+    result.style.alignItems = col;
 
     // 문자열 출력
     

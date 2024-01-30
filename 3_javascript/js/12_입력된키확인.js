@@ -2,7 +2,7 @@
 // 문자열.toUpperCase() : 영어를 모두 대문자로 변경 (a -> A)
 
 const key = document.querySelectorAll(".key");
-// console.log(key);
+console.log(key);
 key[0].innerText.toLowerCase();
 key[1].innerText.toLowerCase();
 key[2].innerText.toLowerCase();

@@ -117,7 +117,7 @@ document.getElementById("inputPno").addEventListener("keyup", (e) => {
 const id = document.getElementById("id");
 const password = document.getElementById("password");
 const passwordCheck = document.getElementById("passwordCheck");
-const name = document.getElementById("name");
+const Name = document.getElementById("name");
 const mobile = document.getElementById("mobile");
 const email = document.getElementById("email");
 
@@ -140,19 +140,56 @@ id.addEventListener("keyup", (e) => {
 
 // 비밀번호
 
+// 문장 추가로 문제 해결
+password.addEventListener("keyup", () => {
+    const correct = document.getElementById("Correct");
+    if (passwordCheck.value.length == 0) {
+        correct.innerText = "";
+    } else if(password.value == passwordCheck.value) {
+        correct.innerText = "비밀번호 일치";
+        correct.style.color = "green";
+    } else {
+        correct.innerText = "비밀번호 불일치";
+        correct.style.color = "red";
+    }
+})
+
 passwordCheck.addEventListener("keyup", () => { // 비밀번호 확인에 값이 들어갔을 때 변하는 거니까 event를 여기에 줌
     // 비밀번호 입력 안한 상태에서 비밀번호 확인에 입력했을 때
     // 비밀번호 확인 모두 삭제하고 비밀번호를 입력해주세요
+    const correct = document.getElementById("Correct");
+
     if(password.value.length == 0 && passwordCheck.value.length != 0) {
         alert("비밀번호를 입력해주세요");
         passwordCheck.value = "";
         password.focus();
+    } else if (password.value == passwordCheck.value) {
+        correct.innerText = "비밀번호 일치";
+        correct.style.color = "green";
+    } else {
+        correct.innerText = "비밀번호 불일치";
+        correct.style.color = "red";
     }
+    // 문제점 keyup event를 확인창에 넣어서 비밀번호 일치 후 위에 비밀번호 바꿔도 일치로 뜸
+})
+// 문장 추가 후에도 문제 발생 둘 다 작성했다 둘 다 지우면 일치로 뜸
+// 둘 문장 순서 바꿔서 해결
 
-    if(password.value === passwordCheck.value) {
-        const collet = document.getElementById("Colloct");
-        collet.innerText = "비밀번호 일치";
-        collet.style.color = "green";
+// 이름 name에 keyup 이벤트
+Name.addEventListener("keyup", (e) => {
+    const correctName = document.getElementById("correctName");
+    const regExp =  /^[가-힣]{2,5}$/;
+    if (regExp.test(e.target.value)) {
+        correctName.innerText = "정상입력";
+        correctName.style.color = "green";
+    } else {
+        correctName.innerText = "한글만 입력하세요";
+        correctName.style.color = "red";
     }
+})
 
+// 회원가입 버튼 클릭 시 validate() 함수 호출
+
+singUp.addEventListener("onclick", () => {
+    
 })

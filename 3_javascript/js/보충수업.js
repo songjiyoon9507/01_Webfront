@@ -46,7 +46,7 @@ document.getElementById("btn1").addEventListener("click", () => {
     
     result.append(box);
 });
-// 자꾸 쌓여요...
+
 
 // 짝수 홀수 구하기
 const numberInput = document.getElementById("numberInput");

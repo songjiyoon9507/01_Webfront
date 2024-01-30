@@ -142,7 +142,7 @@ function selectMenu() {
 function check5() {
 
     const arr = [ [1,2,3,4],
-                  [5,6,7,8], // 첫번째 배열 1번째 index 2번째 배열에서 3번째 ㅇindex
+                  [5,6,7,8], // 첫번째 배열 1번째 index 2번째 배열에서 3번째 index
                   [9,10,11,12] ]; // 2차원 배열
     console.log(arr[1][3]); //8
     
