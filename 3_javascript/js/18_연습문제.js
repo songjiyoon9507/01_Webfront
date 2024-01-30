@@ -5,9 +5,6 @@
 //     display.value += Number(value);
 // }
 
-
-
-
 // i를 배열이라고 할 때 i + 1 결과가 input에 들어가게
 // i가 8보다 작을 때까지만
 
@@ -40,13 +37,15 @@ addBtn.addEventListener("click", () => {
 
     
     star.addEventListener("click", () => {
-    //     const starColor = star.style.color;
-    star.style.color = "yellow";
-    //     if (starColor == "yellow") {
-    //         btn.style.color = "black";
-    //     } else {
-    //         btn.style.color = "yellow";
-    //     }
+        // const starColor = star.style.color;
+        star.style.color = "yellow";
+        // if (star.style.color.innerText == "yellow") {
+            //  star.style.color = "black";
+        // } else {
+            // star.style.color = "yellow";
+        // }
+        // console.log(star.style.color) yellow
+        // 노란색일 때 누르면 검정색으로 돌아오게 만들고싶음..
     })
 
 

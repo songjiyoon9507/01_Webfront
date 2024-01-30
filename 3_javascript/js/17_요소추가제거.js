@@ -67,7 +67,6 @@ add.addEventListener("click", () => {
 // 계산 버튼 클릭했을때
 calc.addEventListener("click", () => {
 
-    
     const num = document.getElementsByClassName("input-number"); // 여기에 Number.value 해도 안됨
     console.log(num);
     let sum = 0;

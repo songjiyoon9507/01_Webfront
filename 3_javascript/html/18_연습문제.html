@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>18_연습문제</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>18_연습문제</title>
 
-    <link rel="stylesheet" href="../css/18_연습문제.css">
-    <script src="https://kit.fontawesome.com/3dd1cd3301.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <main>
-        <div class="container"> <!--전화번호-->
-            <!-- form 태그로 만들면 숫자 사라짐 -->
-            <input class="display"> <!--누른 키패드대로 뜨는 번호-->
-            <div id="keypad">
-                <div>
-                    <button class="numbers" onclick="btn('1')">1</button>
-                    <button class="numbers" onclick="btn('2')">2</button>
-                    <button class="numbers" onclick="btn('3')">3</button>
-                </div> 
-                <div> 
-                    <button class="numbers" onclick="btn('4')">4</button>
-                    <button class="numbers" onclick="btn('5')">5</button>
-                    <button class="numbers" onclick="btn('6')">6</button>
-                </div> 
-                <div> 
-                    <button class="numbers" onclick="btn('7')">7</button>
-                    <button class="numbers" onclick="btn('8')">8</button>
-                    <button class="numbers" onclick="btn('9')">9</button>
-                </div> 
-                <div> 
-                    <button class="numbers" onclick="btn('#')">#</button>
-                    <button class="numbers" onclick="btn('0')">0</button>
-                    <button class="numbers" onclick="btn('*')">*</button>
+        <link rel="stylesheet" href="../css/18_연습문제.css">
+        <script src="https://kit.fontawesome.com/3dd1cd3301.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <main>
+            <div class="container"> <!--전화번호-->
+                <!-- form 태그로 만들면 숫자 사라짐 -->
+                <input class="display"> <!--누른 키패드대로 뜨는 번호-->
+                <div id="keypad">
+                    <div>
+                        <button class="numbers" onclick="btn('1')">1</button>
+                        <button class="numbers" onclick="btn('2')">2</button>
+                        <button class="numbers" onclick="btn('3')">3</button>
+                    </div> 
+                    <div> 
+                        <button class="numbers" onclick="btn('4')">4</button>
+                        <button class="numbers" onclick="btn('5')">5</button>
+                        <button class="numbers" onclick="btn('6')">6</button>
+                    </div> 
+                    <div> 
+                        <button class="numbers" onclick="btn('7')">7</button>
+                        <button class="numbers" onclick="btn('8')">8</button>
+                        <button class="numbers" onclick="btn('9')">9</button>
+                    </div> 
+                    <div> 
+                        <button class="numbers" onclick="btn('#')">#</button>
+                        <button class="numbers" onclick="btn('0')">0</button>
+                        <button class="numbers" onclick="btn('*')">*</button>
+                    </div>
+                </div>
+                <div class="containerBtn">
+                    <button id="addBtn">추가</button>
+                    <button id="removeBtn">초기화</button>
                 </div>
             </div>
-            <div class="containerBtn">
-                <button id="addBtn">추가</button>
-                <button id="removeBtn">초기화</button>
-            </div>
-        </div>
-        <section>
             <section>
-                <div>전화 번호 목록</div>
+                <section>
+                    <div>전화 번호 목록</div>
+                </section>
+                <section id="con2">
+                <!--<div class="border">
+                        <div class="list"></div>
+                        <i>☆</i>
+                        <span>&times;</span>
+                    </div>-->
+                </section>
             </section>
-            <section id="con2">
-            <!--<div class="border">
-                    <div class="list"></div>
-                    <i>☆</i>
-                    <span>&times;</span>
-                </div>-->
-            </section>
-        </section>
-    </main>
+        </main>
 
-    <script src="../js/18_연습문제.js"></script>
-</body>
+        <script src="../js/18_연습문제.js"></script>
+    </body>
 </html>

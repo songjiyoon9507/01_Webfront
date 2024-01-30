@@ -115,7 +115,7 @@ function pow(num,x) {
     }
 
     return result;
-}
+}  // pow(num,x) pow(2,5) == 32
 
 function sumFn(arr) { // 전달된 배열 요소의 합을 반환
     let sum = 0;
@@ -137,7 +137,7 @@ document.querySelector("#btn3a").addEventListener("click", function() {
     numbers.push(4);
     numbers.push( pow(2,5) ); // 함수도 넣을 수 있음
     // == numbers.push(32)
-
+    console.log(numbers);
     // console.log(numbers);
     console.log("합계 : ", sumFn(numbers));
 })

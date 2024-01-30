@@ -53,10 +53,12 @@ const numberInput = document.getElementById("numberInput");
 
 const btn2 = document.getElementById("btn2");
 
+numberInput.value = "";
+
+console.log(numberInput.lenght);
 btn2.addEventListener("click", () => {
     
-    numberInput.value = "";
-    if (numberInput.value.lenght == 0) { //아무것도 입력 안함
+    if (numberInput.value.lenght == null) { //아무것도 입력 안함
         alert("숫자를 입력해주세요");
     } else if (numberInput.value%2 == 0) { // 짝수일 때
         alert("짝수입니다.");
