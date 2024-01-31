@@ -1,5 +1,5 @@
 // const container = document.getElementsByClassName("container");
-const container = document.querySelector(".container");
+// const container = document.querySelector(".container");
 const num = document.querySelectorAll(".number");
 const result = document.querySelector("#result");
 // const reset = document.getElementById("reset");
@@ -37,9 +37,12 @@ let count = 0; // 글자수 변수
 // if (count < 11 && num[i] == Number(e.target.innerText)) {
 // } else 
 // for문 안에 또 for문 넣어서 이상하게 나옴
-for(let n = 0; n < num.length; n++) {
-    //console.log(n);
-    num[n].addEventListener("click", (e) => {
+console.log(num);
+console.log(num[0].innerText);
+
+for(let i = 0; i < num.length; i++) {
+    //console.log(i);
+    num[i].addEventListener("click", (e) => {
         console.log(e.target.innerText);
         count++;
 
@@ -47,7 +50,7 @@ for(let n = 0; n < num.length; n++) {
             alert("10개 까지 입력");
             result.innerText = "";
             count = 0;
-            return;
+            return; // 현재 수행중인 함수 종료 호출한 곳으로 돌아감  
         }
         result.innerText += e.target.innerText;
         // for (let i = 0; i < num.length ; i++) {

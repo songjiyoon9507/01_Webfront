@@ -58,7 +58,8 @@ numberInput.value = "";
 console.log(numberInput.lenght);
 btn2.addEventListener("click", () => {
     
-    if (numberInput.value.lenght == null) { //아무것도 입력 안함
+    if (numberInput.value.length == 0) { //아무것도 입력 안함
+        // 아무것도 입력 안했을 때 0 넣는 거 맞음 length 스펠링 확인
         alert("숫자를 입력해주세요");
     } else if (numberInput.value%2 == 0) { // 짝수일 때
         alert("짝수입니다.");

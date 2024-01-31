@@ -94,21 +94,30 @@ function check5() {
 function startGame() {
     const rN = Math.floor(Math.random() * 100 + 1);
     let input;
+    
+    
     let count = 0;
     while (input !== null) {
-        // input이 null이 아닐 경우 true 계속됨
-        input = prompt("1~100 사이의 수를 입력해주세요");
+        console.log(input);
         count++;
-        if(rN > input) { // if문에 조건문 만족하면 빠져나감
-            
-            alert(`up 도전횟수 : ${count}회`);
-        } else if (rN < input) {
-            
-            alert(`down 도전횟수 : ${count}회`);
-        } else {
-            
-            alert(`정답입니다. 도전횟수 : ${count}회`);
-            break;
+        // input이 null이 아닐 경우 true 계속됨
+        // 아무것도 없을 때
+        input = prompt("1~100 사이의 수를 입력해주세요");
+            if (input == null){
+                alert("숫자를 입력해주세요");
+            }
+            if(rN > input) { // if문에 조건문 만족하면 빠져나감
+                
+                alert(`up 도전횟수 : ${count}회`);
+            } else if (rN < input) {
+                
+                alert(`down 도전횟수 : ${count}회`);
+            } else {
+                
+                alert(`정답입니다. 도전횟수 : ${count}회`);
+                break;
+            }
         }
-    }
+   
+    
 }

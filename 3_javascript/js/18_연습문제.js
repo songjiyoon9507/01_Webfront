@@ -28,17 +28,32 @@ addBtn.addEventListener("click", () => {
     box.innerHTML = (display.value); // value 넣어줘야 됨!!!
     const star = document.createElement("span")
     star.classList.add("star"); // star class
-    star.innerHTML = "★";
+    // star.innerHTML = "★";
+    star.innerHTML = "<i class='fa-solid fa-star'></i>"; // id 넣어주기
+    // document.querySelector("#icon").style.border = "1px solid black"; 에러뜸
+    // const icon = document.getElementById("icon");
+    // console.log(icon);
+    // icon.style.border = "1px solid black";
+    // star.style.border = "1px solid black"; // border 넣는 법
     const cancel = document.createElement("span")
     cancel.innerHTML = "&times;";
     div.append(box, star, cancel);
     con2.append(div);
     display.value = '';
 
-    
+    // 짝수번 눌렀을 때 검정색
+    // 홀수번 눌렀을 때 노란색
+    let count = 0; // 초기화식 (초기화식 밖으로 꺼내야함)
     star.addEventListener("click", () => {
         // const starColor = star.style.color;
-        star.style.color = "yellow";
+        count++;
+        console.log(count);
+        if (count % 2 == 1) { // 홀수일때
+
+            star.style.color = "rgb(254, 234, 51)";
+        } else {
+            star.style.color = "black";
+        }
         // if (star.style.color.innerText == "yellow") {
             //  star.style.color = "black";
         // } else {
@@ -47,8 +62,6 @@ addBtn.addEventListener("click", () => {
         // console.log(star.style.color) yellow
         // 노란색일 때 누르면 검정색으로 돌아오게 만들고싶음..
     })
-
-
 
     cancel.addEventListener("click",() => {
         div.remove();
