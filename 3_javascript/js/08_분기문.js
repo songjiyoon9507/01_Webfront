@@ -72,52 +72,80 @@ function check4() {
 //     }
 // } // 4의 배수도 나옴
 
-function check5() {
+// function check5() {
 
-    for(let row=1; row <= 5; row++) { // 5줄 출력
-        let str = "";
-        for(let col=0; col<=9; col++) {
-            // 0을 제외한 4의 배수인 경우
-            if(col != 0 && col % 4 == 0) continue;
+//     for(let row=1; row <= 5; row++) { // 5줄 출력
+//         let str = "";
+//         for(let col=0; col<=9; col++) {
+//             // 0을 제외한 4의 배수인 경우
+//             if(col != 0 && col % 4 == 0) continue;
 
-            str += col;
-        }
+//             str += col;
+//         }
 
-        console.log(str);
+//         console.log(str);
 
-        // 3번째 줄 출력후 멈춤
-        if(row == 3) break;
-    }
-}
+//         // 3번째 줄 출력후 멈춤
+//         if(row == 3) break;
+//     }
+// }
 
-// up/down game
+// // up/down game
+// function startGame() {
+//     const rN = Math.floor(Math.random() * 100 + 1);
+//     let input;
+
+//     let count = 0;
+//     while (input !== null) {
+//         // 확인 누르면 계속 카운트 올라감
+//         count++;
+
+//         input = prompt("1~100 사이의 수를 입력해주세요");
+//         console.log();
+//         // input이 null이 아닐 경우 true 계속됨
+//         // 아무것도 없을 때
+//         if (input == null || isNaN(input)){ // 숫자가 아니면
+//             alert("숫자를 입력해주세요");
+
+//             return;
+//         }
+
+//         if(rN > Number(input)) { // if문에 조건문 만족하면 빠져나감
+            
+//             alert(`up 도전횟수 : ${count}회`);
+//         } else if (rN < Number(input)) {
+            
+//             alert(`down 도전횟수 : ${count}회`);
+//         } else if (rN == Number(input) ) {
+            
+//             alert(`정답입니다. 도전횟수 : ${count}회`);
+
+//             break;
+            
+//         }
+        
+//     }
+
+    
+// }
 function startGame() {
     const rN = Math.floor(Math.random() * 100 + 1);
-    let input;
-    
-    
-    let count = 0;
+    let input; // prompt에 들어갈 값
+    let count = 0; // 도전 횟수
     while (input !== null) {
-        console.log(input);
-        count++;
         // input이 null이 아닐 경우 true 계속됨
-        // 아무것도 없을 때
         input = prompt("1~100 사이의 수를 입력해주세요");
-            if (input == null){
-                alert("숫자를 입력해주세요");
-            }
-            if(rN > input) { // if문에 조건문 만족하면 빠져나감
-                
-                alert(`up 도전횟수 : ${count}회`);
-            } else if (rN < input) {
-                
-                alert(`down 도전횟수 : ${count}회`);
-            } else {
-                
-                alert(`정답입니다. 도전횟수 : ${count}회`);
-                break;
-            }
+        count++;
+        if(rN > input) { // if문에 조건문 만족하면 빠져나감
+            
+            alert(`up 도전횟수 : ${count}회`);
+        } else if (rN < input) {
+            
+            alert(`down 도전횟수 : ${count}회`);
+        } else {
+            
+            alert(`정답입니다. 도전횟수 : ${count}회`);
+            break;
         }
-   
-    
+    }
 }
