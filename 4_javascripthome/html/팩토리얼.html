@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>팩토리얼</title>
+    </head>
+
+    <body>
+        <h1>while 문을 사용한 팩토리얼 계산</h1>
+        <script>
+            let inputNumber = prompt("숫자를 입력하세요.");
+            // 취소 버튼을 눌렀거나 아무것도 입력하지 않고 확인 버튼을 눌렀을 때
+            if(inputNumber == null || inputNumber == "") { 
+
+                document.write(`값을 입력하지 않았습니다.`);
+              // 0보다 작거나 같은 수를 넣었을 때나 정수가 아닌 수를 넣었을 때  
+            } else if (inputNumber <= 0 || inputNumber % 1 !== 0) {
+                console.log(inputNumber);
+                document.write(`자연수를 입력해주세요`);
+              // 위에 경우를 제외하면 자연수를 넣었을 때
+            } else if (inputNumber !== null) {
+                // 결과값 (곱한 값 누적해줄 곳)
+                let result = 1;
+                // 1~입력값까지 1씩 커질 변수
+                let i = 1;
+                 // 입력한 값이랑 같아질 때까지 while문 반복
+                while(i <= inputNumber) {
+                    result *= i;
+                    i++;
+                }
+                document.write(`<h3>${inputNumber}! = ${result}</h3>`)
+            }
+        </script>
+    </body>
+</html>

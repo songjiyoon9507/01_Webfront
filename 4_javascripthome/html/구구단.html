@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>구구단 출력하기</title>
+        <style>
+            div {
+                display: inline-block;
+                padding: 0 20px 30px 20px;
+                margin: 15px;
+                border: 1px solid #ccc;
+                line-height: 2;
+            }
+            
+            div h3 {
+                text-align: center;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+
+    <body>
+        <script>
+            // 구구단
+            // 2단부터 9단까지 1~9 다 곱함
+            for(let i = 2; i <= 9 ; i++) { // 2단부터 9단까지
+                document.write("<div>");
+                document.write("<h3>" + i + "단</h3>")
+                for(let x = 1; x <= 9 ; x++) { // 곱해지는 수
+                    document.write(i + "x" + x + "=" + i*x + "<br>")
+                }
+                document.write("</div>");
+            }
+        </script>
+    </body>
+</html>
