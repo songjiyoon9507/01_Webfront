@@ -132,6 +132,18 @@ document.querySelector("#btn3a").addEventListener("click", function() {
     const numbers = []; // 비어있는 배열 생성
 
     // 배열.push(값) : 배열의 마지막 요소로 값을 추가
+    // 배열.unshift(값,값,값...) : 배열의 맨 앞에 새로운 요소 추가
+    // 배열.pop() : 마지막에 있는 요소 꺼내기
+    // 배열.shift() : 맨앞 에 있는 요소 꺼내기
+    // 배열에 요소 추가, 삭제하는 splice()메서드
+    // 요소 1개
+    // splice(2) => index num 2 뒤로 쭉 삭제 앞에 0,1 만 남게
+    // 요소 2개
+    // splice(2,1) => index num 2 1개 삭제
+    // 요소 3개
+    // splice(index넘버, 부터 ~까지 삭제, 추가할 요소)
+    // slice() 요소 꺼내는 메서드
+    // slice(2,4) => index num 2~4직전 2~3까지 요소 꺼냄
     numbers.push(30);
     numbers.push(50);
     numbers.push(4);
