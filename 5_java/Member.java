@@ -74,7 +74,7 @@ public class Member {
 		return "userId=" + userId + ", userPwd=" + userPwd + ", name=" + name + ", age=" + age + ", gender="
 				+ gender + ", email=" + email;
 	}
-	
+	// 수정
 	
 
 }
