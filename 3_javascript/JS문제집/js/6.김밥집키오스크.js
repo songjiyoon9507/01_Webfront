@@ -10,4 +10,8 @@ function addToCart(menu, price) {
     const cartItem = document.createElement("div");
     cartItem.innerHTML = menu;
     cart.append(cartItem);
+
+    all += price;
+    total.innerHTML = all;
+    // total.innerHtml += price;
 }
