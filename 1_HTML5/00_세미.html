@@ -23,9 +23,27 @@
                 <li><a href="#">Signup</a></li>
             </ul>
         </nav>
-        <div class="home">
-            <img src="https://images.unsplash.com/photo-1585499583264-491df5142e83?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-        </div>
+
+        <section>
+            <div class="home">
+                <img src="https://images.unsplash.com/photo-1585499583264-491df5142e83?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            </div>
+            <form action="/main/login" method="post">
+                <div>
+                    아이디 : <input type="text" required name="inputId">
+                </div>
+                <div>
+                    비밀번호 : <input type="password" required name="inputPw">
+                </div>
+    
+                <div>
+                    <button>로그인</button>
+                </div>
+                <div>
+                    회원가입
+                </div>
+        </section>
+        </form>
     </main>
 </body>
 </html>
