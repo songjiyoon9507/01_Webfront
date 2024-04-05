@@ -1,3 +1,48 @@
+/* @font-face {
+    font-family: 'SOGANGUNIVERSITYTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/SOGANGUNIVERSITYTTF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+/* @font-face {
+    font-family: 'Hahmlet-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+} */
+
+/* <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic-eco.css" rel="stylesheet"> */
+
+/* @font-face {
+    font-family: 'MBC1961GulimM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/MBC1961GulimM.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+/* @font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KOHIBaeumOTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/KOHIBaeumOTF.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
 * {
     /* color: white; */
     box-sizing: border-box;
@@ -5,6 +50,19 @@
     padding: 0;
 
     height: 100%;
+
+    /* font-family: 'NanumGothicEco'; */
+    /* font-family: 'NanumGothicEcoBold';
+    font-family: 'NanumGothicEcoExtraBold'; */
+
+    /* font-family: 'SOGANGUNIVERSITYTTF'; */
+
+    /* font-family: 'Hahmlet-Regular'; */
+
+    /* font-family: 'MBC1961GulimM'; */
+
+    font-family: 'Pretendard-Regular';
+
     /* height: 500px; */
 
     /* border: 1px solid white; */
@@ -125,3 +183,47 @@ a {
 .account {
     font-size: 15px;
 }
+
+/* 반응형 모바일 기준 */
+/* 해상도 767px 이하면 무조건 여기 작성된대로 css 적용해라 */
+/* 스타일 덮어쓰면 됨 */
+@media all and (max-width: 767px) {
+    /* main태그 width: 1140px */
+        main {
+            width: 100vw;
+            /* veiw port width */
+        }
+    
+        /* header {
+            display: none;
+        } */
+    
+        .container {
+            width: 100%;
+            border-bottom: none;
+            height: auto;
+        }
+    
+        /* nav > ul {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        nav li {
+            flex-basis: auto;
+            border-bottom: 1px solid #ddd;
+        }
+    
+        .content {
+            flex-direction: column;
+        }
+    
+        footer > * {
+            font-size: 12px;
+        } */
+    }
+    
+    /* 태블릿 기준 */
+    @media all and (min-width: 768px) and (max-width:1023px) {
+        /* 스타일 입력 */
+    }
