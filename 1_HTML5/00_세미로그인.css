@@ -71,8 +71,12 @@
 .container {
     height: 100%;
     /* 전체 높이 */
-    background-color: #e8f1fc;
+    /* background-color: #e8f1fc; */
     /* background-color: rgb(3, 2, 15); */
+    /* background-color: #b1c0e0; */
+    /* background-color: #a3acd9; */
+    /* background-color: #bac7e6; */
+    background-color: #abc4ff;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -123,13 +127,15 @@ form div {
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
-   
+    background-image: url("/images/KakaoTalk_20240408_173754150.jpg");
+    background-size: cover;
+   background-position: center;
 }
 
 .right img {
     display: flex;
-    width: 100%;
-    
+    /* width: 100%; */
+    max-height: 100%;
     border-radius: 10px;
     /* margin-right: 10px; */
 }
